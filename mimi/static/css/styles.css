@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1c72c9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1b9fb1;
+}
+form {
+    background: #2ab3e9;
+    padding: 25px 30px;
+    width: 600px;
+    height: 500px;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+    color: #555;
+}
+input[type="text"] {
+    width: 100%;
+    padding: 8px 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+input[type="radio"] {
+    margin-left: 10px;
+    margin-right: 5px;
+}
+input[type="submit"] {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 400px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+form input[type="radio"] {
+    margin: 5px;
+}
+
+button,
+input[type="submit"] {
+    margin-top: 15px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background: #0056b3;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #c9be2f;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icons {
+    display: flex;
+    align-items: center;
+}
+a {
+    flex: 1;
+    margin-left: 10px;
+    text-decoration: none;
+
+} 
+
+.fa-pen-to-square {
+    color: green;
+}
+
+.fa-trash {
+    color: red;
+}   
+.errors {
+    margin-top: 15px;
+    color: red;
+    font-size: 14px;
+}
+.cancel,
+.create {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+}
+.cancel {
+    color: #555;
+}
+i {
+    cursor: pointer;
+    flex-direction: 1;
+}
+nav a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: blue;
+}
+
+nav a:hover {
+  color: red;
+}

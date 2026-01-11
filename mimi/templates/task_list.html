@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /> 
+    <title>Document</title>
+</head>
+<body>
+    <h1>Task list</h1>
+    <form method="POST" action="{% url 'task_add' %}" encrypt="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">upload</button>
+    </form>
+        {% for post in posts %}
+            <div>
+                <h2>{{ post.title }}</h2>
+                <img  src="{{ post.image.url }}" alt="{{ post.title }}" width="200">
+            </div>
+        {% endfor %}
+    <a href="{% url 'task_add' %}">Create new task</a>
+    <ul>
+        {% for task in tasks %}
+            <li>
+                <div style="max-width: 30px;">
+                    {% if task.image %}
+                    <img style="max-width: 60px;" src="{{task.image.url}}" alt="">
+                    {% endif %}
+                </div>
+                <div>
+                    {{ task.title }}  {{ task.description }} (: {{ task.completed }})
+                </div>
+                <div class="icons">
+                    <a href="{% url 'task_update' task.id %}">update<i class="fa-solid fa-pen-to-square"></i></a>
+                    <a href="{% url 'task_delete' task.id %}">delete<i class="fa-solid fa-trash"></i></a>  
+                </div>  
+            </li>
+        {% endfor %}
+</body>
+</html>
