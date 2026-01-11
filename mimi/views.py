@@ -34,7 +34,6 @@ def task_update(request, task_id):
         task.description = request.POST.get("description")
         task.completed = request.POST.get("completed")  
         task.image = request.FILES.get("image") 
-        print("(((((((((((((((((((((((((((((())))))))))))))))))))))))))))))")
         print(task.completed)
         task.save()
         return redirect("task_list")
