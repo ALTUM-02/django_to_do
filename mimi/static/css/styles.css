@@ -78,7 +78,7 @@ form label {
     font-weight: bold;
 }
 
-form input[type="text"] {
+form input[type="text"] [type="password"] [type="email"] [type="date"] [type="number"] {
     width: 100%;
     padding: 8px;
     margin-top: 5px;
