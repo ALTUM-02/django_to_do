@@ -18,7 +18,7 @@
         {% for post in posts %}
             <div>
                 <h2>{{ post.title }}</h2>
-                <img  src="{{ post.image.url }}" alt="{{ post.title }}" width="200">
+                <img  src="{{ post.image.url }}" alt="{{ post.title }}" width="250">
             </div>
         {% endfor %}
     <a href="{% url 'task_add' %}">Create new task</a>
@@ -27,7 +27,7 @@
     <ul>
         {% for task in tasks %}
             <li>
-                <div style="max-width: 30px;">
+                <div style="max-width: 40px;">
                     {% if task.image %}
                     <img style="max-width: 60px;" src="{{task.image.url}}" alt="">
                     {% endif %}
