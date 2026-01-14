@@ -50,7 +50,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #113a65;
 }
 body {
     font-family: Arial, sans-serif;
@@ -61,7 +61,7 @@ body {
 .container {
     width: 400px;
     margin: 50px auto;
-    background: #fff;
+    background: #185191;
     padding: 25px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(183, 186, 9, 0.1);
