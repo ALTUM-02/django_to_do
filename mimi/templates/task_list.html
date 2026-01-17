@@ -9,6 +9,7 @@
     <title>Document</title>
 </head>
 <body>
+    <img src="{% static 'images/mimi_logo.png' %}" alt="mimi logo" width="150">
     <h1>Task list</h1>
     <form method="POST" action="{% url 'task_add' %}" encrypt="multipart/form-data">
         {% csrf_token %}
