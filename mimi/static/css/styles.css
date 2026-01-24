@@ -8,12 +8,13 @@ body {
     flex-direction: column;
 }
 h1 {
+    font-family: 'Courier New', Courier, monospace;
     text-align: center;
     margin-bottom: 20px;
-    color: #1b7459;
+    color: #07523b;
 }
 form {
-    background: #0c9cb6;
+    background:#066272;
     padding: 25px 30px;
     width: 600px;
     height: 500px;
@@ -51,12 +52,6 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #113a65;
-}
-body {
-    font-family: Arial, sans-serif;
-    background: #11bc6f;
-    margin: 0;
-    padding: 0;
 }
 .container {
     width: 300px;
@@ -131,6 +126,7 @@ a {
 
 } 
 
+
 .fa-pen-to-square {
     color: green;
 }
@@ -140,7 +136,7 @@ a {
 }   
 .errors {
     margin-top: 15px;
-    color: red;
+    color: rgb(255, 0, 179);
     font-size: 14px;
 }
 .cancel,
