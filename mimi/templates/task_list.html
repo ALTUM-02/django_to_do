@@ -36,6 +36,7 @@
                 </div>
                 <div>
                     {{ task.title }}  {{ task.description }} (: {{ task.completed }})
+                    <a href="{% url 'task_detail' task.id %}">view</a>
                 </div>
                 <div class="icons">
                     <a href="{% url 'task_update' task.id %}">update<i class="fa-solid fa-pen-to-square"></i></a>

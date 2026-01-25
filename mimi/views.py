@@ -17,6 +17,11 @@ def create_task(request):
         )
         return redirect('task_list')
 
+@login_required(login_url='login')   
+def task_detail(request,id):
+    task = get_object_or_404(Task, id=id, user=request.user)
+    return render(request, "tasks/task_detail.html", {"task": task})     
+
 def show(request):
     posts = Post.objects.all()
     return render(request, 'app/show.html', {'posts': posts})
