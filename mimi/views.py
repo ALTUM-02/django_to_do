@@ -23,7 +23,7 @@ def show(request):
 
 @login_required(login_url='login')
 def task_list(request):
-    tasks = Task.objects.all()
+    tasks = Task.objects.filter(user=request.user)
     return render(request, "task_list.html", {"tasks": tasks})
 
 def task_add(request):

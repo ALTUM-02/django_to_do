@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale =1.0">
+    <title>Task Detail</title>
+</head>
+<body>  
+    
+    <h1>Task Detail Page</h1>
+
+    <p><strong>Title:</strong> {{ task.title }}</p>
+    <p><strong>Status:</strong>
+        {% if task.completed %}
+            Completed
+        {% else %}
+            Not completed
+        {% endif %}
+    </p>
+
+    <a href="{% url 'task_list' %}">⬅ Back to Task List</a>
+
+
+</body>    
+</html>
