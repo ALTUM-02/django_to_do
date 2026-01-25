@@ -12,6 +12,7 @@ def show(request):
     posts = Post.objects.all()
     return render(request, 'app/show.html', {'posts': posts})
 
+@login_required(login_url='login')
 def task_list(request):
     tasks = Task.objects.all()
     return render(request, "task_list.html", {"tasks": tasks})
@@ -85,10 +86,12 @@ def login_view(request):
 
         if user is not None:
             login(request, user)
-            return redirect('home')
+            return redirect('task_list')
         else:
             messages.error(request, "Invalid login details")
             return redirect('login')
+
+        pass
 
     return render(request, 'login.html')
 
