@@ -5,8 +5,17 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 
-# Create your views here.
+# Create your views here.def create_task(request):
 
+
+def create_task(request):
+    if request.method == "POST":
+        title = request.POST['title']
+        Task.objects.create(
+            user=request.user,  
+            title=title
+        )
+        return redirect('task_list')
 
 def show(request):
     posts = Post.objects.all()
