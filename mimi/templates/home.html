@@ -15,8 +15,10 @@
     <a href="{% url 'logout' %}">Logout<i class="fa-notdog-duo fa-solid fa-arrow-right-from-bracket"></i></a>
 {% else %}
     <h2>Welcome Guest</h2>
-    <a href="{% url 'login' %}">Login <i class="fa-solid fa-user-key"></i> </a> 
+    <a href="{% url 'login' %}">Login <i class="fa-solid fa-user-key"></i> </a>
     <a href="{% url 'register' %}">Register</a>
+    <a href="{% url 'task list' %}">list</a>
+
 {% endif %}
 
 </body>
