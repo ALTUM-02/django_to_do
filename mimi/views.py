@@ -28,8 +28,8 @@ def show(request):
 
 @login_required(login_url='login')
 def task_list(request):
-    tasks = Task.objects.filter(Task, id=id, user=request.user)
-    return render(request, "tasks/task_list.html", {"tasks": tasks})
+    tasks = Task.objects.all()
+    return render(request, "task_list.html", {"tasks": tasks})
 
 def task_add(request):
     if request.method == "POST":
@@ -38,7 +38,7 @@ def task_add(request):
         completed = request.POST.get("completed") 
         image = request.FILES.get("image")
         task = Task(title=title, description=description, completed=completed, image=image)
-        task.save()  
+     
         return redirect("task_list")
     return render(request, "task_add.html")
 

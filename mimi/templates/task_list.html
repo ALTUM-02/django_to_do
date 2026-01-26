@@ -14,7 +14,7 @@
     <form method="POST" action="{% url 'task_add' %}" encrypt="multipart/form-data">
         {% csrf_token %}
         {{ form.as_p }}
-        <button type="submit">upload</button>
+        <button type="submit"></button>
     </form>
         {% for post in posts %}
             <div>
@@ -36,12 +36,16 @@
                 </div>
                 <div>
                     {{ task.title }}  {{ task.description }} (: {{ task.completed }})
+        
                 </div>
                 <div class="icons">
                     <a href="{% url 'task_update' task.id %}">update<i class="fa-solid fa-pen-to-square"></i></a>
                     <a href="{% url 'task_delete' task.id %}">delete<i class="fa-solid fa-trash"></i></a>  
-                </div>  
+                </div> 
+
             </li>
-        {% endfor %}
+        {% endfor %} 
+        <a href="{% url 'task_add' %}">Add task</a> 
+
 </body>
 </html>
