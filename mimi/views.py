@@ -28,22 +28,25 @@ def show(request):
 
 @login_required(login_url='login')
 def task_list(request):
-    tasks = Task.objects.all()
+    tasks = Task.objects.filter(user=request.user)
     return render(request, "task_list.html", {"tasks": tasks})
 
+@login_required
 def task_add(request):
     if request.method == "POST":
-        title = request.POST.get("title")
-        description = request.POST.get("description")
-        completed = request.POST.get("completed") 
-        image = request.FILES.get("image")
-        task = Task(title=title, description=description, completed=completed, image=image)
-     
-        return redirect("task_list")
-    return render(request, "task_add.html")
+        from = TaskForm(request.POST, request.FILES)
+        if form.is_valid():
+            task = form.save(commit=False)
+            task.user = request.ser
+            task.save()
+            return redirect("task_list")
+    else:
+        form = TaskForm()
+    return render(request, "task_form.html", {"form": form})
 
+@login_required
 def task_update(request, task_id):
-    task = Task.objects.get(id=task_id)
+    task = Task.objects.get(id=task_id, user=request.user)
     if request.method == "POST":
         task.title = request.POST.get("title")
         task.description = request.POST.get("description")
@@ -54,8 +57,9 @@ def task_update(request, task_id):
         return redirect("task_list")
     return render(request, "task_update.html", {"task": task})
 
+@login_required
 def task_delete(request, task_id):
-    task = Task.objects.get(id=task_id)
+    task = Task.objects.get(id=task_id, user=request.user)
     task.delete()
     return redirect('task_list')
 
