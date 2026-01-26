@@ -34,14 +34,14 @@ def task_list(request):
 @login_required
 def task_add(request):
     if request.method == "POST":
-        from = TaskForm(request.POST, request.FILES)
+        form = TaskForm(request.POST, request.FILES)
         if form.is_valid():
             task = form.save(commit=False)
             task.user = request.ser
             task.save()
             return redirect("task_list")
     else:
-        form = TaskForm()
+        form = taskform()
     return render(request, "task_form.html", {"form": form})
 
 @login_required
