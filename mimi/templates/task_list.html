@@ -19,7 +19,9 @@
         {% for post in posts %}
             <div>
                 <h2>{{ post.title }}</h2>
-                <img  src="{{ post.image.url }}" alt="{{ post.title }}" width="250">
+                {% if post.image %}
+                    <img  src="{{ post.image.url }}" alt="{{ post.title }}" width="250">
+                {% endif %}   
             </div>
         {% endfor %}
   
