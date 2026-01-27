@@ -10,8 +10,8 @@ from django.contrib.auth.decorators import login_required
 
 
 def create_task(request):
-    if request.method == "POST":
-        title = request.POST['title']
+    if request.method == "Task":
+        title = request.Task['title']
         Task.objects.create(
             user=request.user,  
             title=title
@@ -24,8 +24,8 @@ def task_detail(request,id):
     return render(request, "tasks/task_detail.html", {"task": task})     
 
 def show(request):
-    posts = Post.objects.all()
-    return render(request, 'app/show.html', {'posts': posts})
+    Tasks = Task.objects.all()
+    return render(request, 'app/show.html', {'Tasks': Tasks})
 
 @login_required(login_url='login')
 def task_list(request):
@@ -34,8 +34,8 @@ def task_list(request):
 
 @login_required
 def task_add(request):
-    if request.method == "POST":
-        form = TaskForm(request.POST, request.FILES)
+    if request.method == "Task":
+        form = TaskForm(request.Task, request.FILES)
         if form.is_valid():
             task = form.save(commit=False)
             task.user = request.ser
@@ -48,10 +48,10 @@ def task_add(request):
 @login_required
 def task_update(request, task_id):
     task = Task.objects.get(id=task_id, user=request.user)
-    if request.method == "POST":
-        task.title = request.POST.get("title")
-        task.description = request.POST.get("description")
-        task.completed = request.POST.get("completed")  
+    if request.method == "Task":
+        task.title = request.Task.get("title")
+        task.description = request.Task.get("description")
+        task.completed = request.Task.get("completed")  
         task.image = request.FILES.get("image") 
         print(task.completed)
         task.save()
@@ -70,11 +70,11 @@ def home(request):
 
 
 def register(request):
-    if request.method == "POST":
-        username = request.POST.get('username')
-        email = request.POST.get('email')
-        password1 = request.POST.get('password1')
-        password2 = request.POST.get('password2')
+    if request.method == "Task":
+        username = request.Task.get('username')
+        email = request.Task.get('email')
+        password1 = request.Task.get('password1')
+        password2 = request.Task.get('password2')
 
         if password1 != password2:
             messages.error(request, "Passwords do not match")
@@ -97,9 +97,9 @@ def register(request):
 
 
 def login_view(request):
-    if request.method == "POST":
-        username = request.POST.get('username')
-        password = request.POST.get('password')
+    if request.method == "Task":
+        username = request.Task.get('username')
+        password = request.Task.get('password')
 
         user = authenticate(request, username=username, password=password)
 

@@ -9,11 +9,6 @@ class Task(models.Model):
     completed = models.BooleanField(default=False)
     image = models.ImageField(upload_to='tasks/', null=True, blank=True)
 
-
-class Post(models.Model):
-    title = models.CharField(max_length=200)
-    body = models.TextField()
-        
     
     def __str__(self):
         return self.title     
