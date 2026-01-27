@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .models import Task
+from .forms import TaskForm
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
@@ -41,8 +41,8 @@ def task_add(request):
             task.save()
             return redirect("task_list")
     else:
-        form = taskform()
-    return render(request, "task_form.html", {"form": form})
+        form = TaskForm()
+    return render(request, "task_add.html", {"form": form})
 
 @login_required
 def task_update(request, task_id):
