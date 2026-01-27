@@ -34,11 +34,11 @@ def task_list(request):
 
 @login_required
 def task_add(request):
-    if request.method == "Task":
-        form = TaskForm(request.Task, request.FILES)
+    if request.method == "POST":
+        form = TaskForm(request.POST, request.FILES)
         if form.is_valid():
             task = form.save(commit=False)
-            task.user = request.ser
+            task.user = request.user
             task.save()
             return redirect("task_list")
     else:
@@ -70,11 +70,11 @@ def home(request):
 
 
 def register(request):
-    if request.method == "Task":
-        username = request.Task.get('username')
-        email = request.Task.get('email')
-        password1 = request.Task.get('password1')
-        password2 = request.Task.get('password2')
+    if request.method == "POST":
+        username = request.POST.get('username')
+        email = request.POST.get('email')
+        password1 = request.POST.get('password1')
+        password2 = request.POST.get('password2')
 
         if password1 != password2:
             messages.error(request, "Passwords do not match")
@@ -97,9 +97,9 @@ def register(request):
 
 
 def login_view(request):
-    if request.method == "Task":
-        username = request.Task.get('username')
-        password = request.Task.get('password')
+    if request.method == "POST":
+        username = request.POST.get('username')
+        password = request.POST.get('password')
 
         user = authenticate(request, username=username, password=password)
 

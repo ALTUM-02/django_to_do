@@ -9,7 +9,7 @@
 </head>
 <body>
     <h1>Add New Task</h1>
-    <form method="Task" enctype="multipart/form-data">
+    <form method="POST" enctype="multipart/form-data">
         {% csrf_token %}
         <label for="title">title:</label>
         <input type="text" name="title" required><br><br>
@@ -27,7 +27,7 @@
         <input type="submit" value="Add task">
     </form>
 
-    <a href="{% 'task_list' %}">Add task</a>
+    <a href="{% url 'task_list' %}">Add task</a>
     {% if form.errors %}
         {% endif %}
 </body>

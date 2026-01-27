@@ -15,7 +15,7 @@
 <p style="color:rgb(98, 0, 255);">{{ message }}</p>
 {% endfor %}
 
-<form method="Task">
+<form method="POST">
     {% csrf_token %}
 
     <input type="text" name="username" placeholder="Username" required><br><br>
@@ -29,6 +29,7 @@
 </form>
 
 <a href="{% url 'task_list' %}">Cancel</a>
+<a herf="{% url 'login' %}">enter into your Account </a>
 
 
 </body>
