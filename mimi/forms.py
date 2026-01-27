@@ -1,4 +1,3 @@
-from .models import Post
 from .models import Task
 
 class PostForm(forms.ModelForm):
