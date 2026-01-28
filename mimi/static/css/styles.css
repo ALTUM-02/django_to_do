@@ -20,6 +20,9 @@ form {
     height: 500px;
     border-radius: 50px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    align-items: center;
+    justify-content: center;
+    flex-direction: center;
 }
 label {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -252,3 +255,8 @@ nav a:hover {
     color: #555;
 }
 
+a href {
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+}
