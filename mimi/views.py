@@ -108,10 +108,9 @@ def login_view(request):
             return redirect('task_list')
         else:
             messages.error(request, "Invalid login details")
-            return redirect('login')
+            return render(request, 'login.html')
 
-        pass
-
+      
     return render(request, 'login.html')
 
 
