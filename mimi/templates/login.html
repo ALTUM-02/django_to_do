@@ -13,16 +13,19 @@
         <div class="login-card">
              
             <div class="login-left">
+                <i class="fa fa-user-circle" aria-hidden="true"></i>
                 <h1>login</h1>
                 <p>sign in to continue</p>
 
                 <form method="POST">
                   {% csrf_token %}
                   <label>username</label>
-                  <input type="text" name="username" placeholder="Username" required><br><br><i class="fa fa-user-circle"></i>
+                  <input type="text" name="username" placeholder="Username" required><br><br>
+                  <i class="fa fa-user-circle"></i>
 
                   <label>password</label>
-                  <input type="password" name="password" placeholder="Password" required><br><br><i class="fa fa-key"></i>
+                  <input type="password" name="password" placeholder="Password" required><br><br>
+                  <i class="fa fa-key"></i>
 
                   <button type="submit" >Sign In</button>
                   
