@@ -66,7 +66,7 @@ def task_delete(request, task_id):
 
 
 def home(request):
-    return render(request, 'home.html')
+    return render(request, 'mimi/home.html')
 
 
 def register(request):
