@@ -37,6 +37,7 @@ input[type="text"] {
     margin-top: 5px;
     border-radius: 4px;
     border: 1px solid #ccc;
+    cursor:pointer;
 }
 input[type="radio"] {
     margin-left: 10px;
@@ -259,4 +260,5 @@ a href {
     flex-direction: center;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
