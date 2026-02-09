@@ -190,7 +190,7 @@ nav a:hover {
     box-shadow: 0 0 20px #00ffcc;
     justify-content: center;
     align-items: row;
-    
+    background: linear-gradient(90deg, #ff4dff, #00ffcc );
 }
 
 .login-left {
