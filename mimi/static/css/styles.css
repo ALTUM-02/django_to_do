@@ -189,6 +189,8 @@ nav a:hover {
     overflow: hidden;
     box-shadow: 0 0 20px #00ffcc;
     justify-content: center;
+    align-items: row;
+    
 }
 
 .login-left {
