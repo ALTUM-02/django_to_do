@@ -175,6 +175,8 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     border-radius: 20px;
+    cursor: pointer;
+    
 } 
 
 .login-card {
