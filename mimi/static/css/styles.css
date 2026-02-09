@@ -176,7 +176,7 @@ nav a:hover {
     align-items: center;
     border-radius: 20px;
     cursor: pointer;
-    
+    padding: 40px;
 } 
 
 .login-card {
