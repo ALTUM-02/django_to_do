@@ -223,7 +223,7 @@ nav a:hover {
     cursor: pointer;
 }
 
-.login-card botton;:hover {
+.login-card botton:hover {
     background: #cc9f16;
 }
 
@@ -249,4 +249,9 @@ a href {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+}
+
+.form-group {
+    display: flex;
+    
 }
