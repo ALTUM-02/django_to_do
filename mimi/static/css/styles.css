@@ -198,7 +198,7 @@ nav a:hover {
     font-size: 14px;
 }
 
-.login-left input {
+.login-card input {
     width: 100%;
     padding: 12px;
     margin-top: 5px;
@@ -207,11 +207,11 @@ nav a:hover {
     outline: none;
 }
 
-.login-left input:focus {
+.login-card input:focus {
     border-color: #facc15;
 }
 
-.login-left button {
+.login-card button {
     width: 100%;
     margin-top: 30px;
     padding: 12px;
