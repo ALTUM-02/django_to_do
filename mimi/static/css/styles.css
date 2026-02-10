@@ -253,5 +253,6 @@ a href {
 
 .form-group {
     display: flex;
-    
+    flex-direction: column;
+
 }
