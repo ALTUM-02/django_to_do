@@ -192,7 +192,7 @@ nav a:hover {
     background: linear-gradient(90deg, #ff4dff, #00ffcc );
 }
 
-.login-left label {
+.login-card label {
     display: block;
     margin-top: 15px;
     font-size: 14px;
