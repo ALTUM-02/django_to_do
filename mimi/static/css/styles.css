@@ -192,14 +192,6 @@ nav a:hover {
     background: linear-gradient(90deg, #ff4dff, #00ffcc );
 }
 
-.login-left p {
-    color: #777;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-    flex-direction: center;
-}
-
 .login-left label {
     display: block;
     margin-top: 15px;
