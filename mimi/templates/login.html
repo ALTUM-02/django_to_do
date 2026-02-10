@@ -12,13 +12,13 @@
     <div class="login-container">
         <div class="login-card">
              
-                <i class="fa fa-user-circle"></i>
-                <h1>login</h1>
-                <p>sign in to continue</p>
+            <i class="fa fa-user-circle"></i>
+            <h1>login</h1>
+            <p>sign in to continue</p>
 
-                <form method="POST">
-                  {% csrf_token %}
-
+            <form method="POST">
+            {% csrf_token %}
+            <div class="form-group"></div>
                   <label>username</label>
                   <input type="text" name="username" placeholder="Username" required><br><br>
                   <i class="fa fa-user-circle"></i>
