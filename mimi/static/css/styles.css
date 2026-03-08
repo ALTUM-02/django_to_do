@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #0d4781;
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,7 +56,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #113a65;
+    background-color: #2aa8be;
 }
 .container {
     width: 300px;
