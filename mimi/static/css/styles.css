@@ -170,7 +170,7 @@ nav a:hover {
 .login-container {
     display: flex;
     position: center;
-    width: 100%;
+    width: 1200px;
     height: 100vh;
     justify-content: center;
     align-items: center;
