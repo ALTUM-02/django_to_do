@@ -24,12 +24,6 @@ label {
     color: #555;
 }
 
-button,
-input[type="submit"] {
-    margin-top: 15px;
-    padding: 10px;
-  
-
 .login-container{
     display: flex;
     justify-content: ccenter;
@@ -49,6 +43,16 @@ input[type="submit"] {
 
 .login-header p{
     color: #333;
+}
+
+.form-group{
+    margin-bottom: 15px;
+}
+
+.form-group label{
+    display: block;
+    margin-bottom: px;
+    color: #ff4dff;
 }
 
 .login-card {
