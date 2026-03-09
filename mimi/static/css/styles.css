@@ -10,7 +10,7 @@ h1 {
     margin-bottom: 20px;
     color: #07523b;
 }
-form {
+/*form {
     background:#c6d4d6;
     padding: 25px 30px;
     width: 500px;
@@ -19,8 +19,9 @@ form {
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     align-items: center;
     justify-content: center;
-    flex-direction: center;
-}
+    flex-direction: center;*/
+
+
 label {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: block;
@@ -171,6 +172,10 @@ nav a:hover {
     justify-content: center;
     align-items: center;
 } 
+
+.login-page{
+    display: flex;
+}
 
 .login-card {
     border-radius: 20px;
