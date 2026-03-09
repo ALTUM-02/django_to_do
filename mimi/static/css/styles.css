@@ -170,10 +170,9 @@ nav a:hover {
     width: 1200px;
     height: 100vh;
     justify-content: center;
-    align-items: center;
 } 
 
-.login-page{
+.login-container{
     display: flex;
     justify-content: ccenter;
     align-items: center;
