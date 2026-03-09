@@ -12,10 +12,11 @@
     <div class="login-container">
         <div class="login-card">
              
-            <i class="fa fa-user-circle"></i>
-            <h1>login</h1>
-            <p>sign in to continue</p>
-
+            <div class="login-header">
+                <h1>login</h1>
+                <p>sign in to continue</p>
+            </div>
+            
             <form method="POST">
             {% csrf_token %}
 
