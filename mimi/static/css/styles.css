@@ -176,6 +176,8 @@ nav a:hover {
 .login-page{
     display: flex;
     justify-content: ccenter;
+    align-items: center;
+    height: 100vh;
 }
 
 .login-card {
