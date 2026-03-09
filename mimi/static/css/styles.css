@@ -30,7 +30,7 @@ label {
 
 .login-container{
     width: 100%;
-    align-items: center;
+    max-width: 600px;
     height: 100vh;
 }
 
