@@ -31,7 +31,11 @@ label {
 .login-container{
     width: 100%;
     max-width: 600px;
-    height: 100vh;
+}
+
+.login-card{
+    background: white;
+    
 }
 
 .login-header{
