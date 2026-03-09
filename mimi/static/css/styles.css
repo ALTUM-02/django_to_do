@@ -176,8 +176,6 @@ nav a:hover {
     border-radius: 20px;
     background: white;
     padding: 30px;
-    backdrop-filter: blur(10px);
-    text-align: center;
     overflow: hidden;
     box-shadow: 0 0 20px #00ffcc;
     justify-content: center;
