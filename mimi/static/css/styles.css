@@ -65,6 +65,7 @@ label {
 .login-btn{
     width: 100%;
     padding: 12px;
+    border: none;
 }
 
 .login-card {
