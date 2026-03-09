@@ -74,6 +74,10 @@ label {
     cursor: pointer;
 }
 
+.register{
+    text-align: center;
+}
+
 .login-card {
     border-radius: 20px;
     padding: 40px;
