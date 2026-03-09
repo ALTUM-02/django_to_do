@@ -45,9 +45,8 @@ label {
     margin-bottom: 25px;
 }
 
-.login-header h2{
+.login-header h1{
     margin: 0;
-    color: #333;
 }
 
 .login-header p{
