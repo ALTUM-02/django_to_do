@@ -165,13 +165,6 @@ nav a:hover {
   color: red;
 }
 
-.login-container {
-    display: flex;
-    width: 1200px;
-    height: 100vh;
-    justify-content: center;
-} 
-
 .login-container{
     display: flex;
     justify-content: ccenter;
