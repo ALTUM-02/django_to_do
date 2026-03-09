@@ -185,6 +185,8 @@ nav a:hover {
     padding: 40px;
     box-shadow: 0 0 20px #00ffcc;
     background: linear-gradient(90deg, #ff4dff, #00ffcc );
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+    width: 360px;
 }
 
 .login-card label {
