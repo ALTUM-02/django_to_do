@@ -55,6 +55,11 @@ label {
     color: #ff4dff;
 }
 
+.form-group input{
+    width: 100%;
+    padding: 10px;
+}
+
 .login-card {
     border-radius: 20px;
     padding: 40px;
