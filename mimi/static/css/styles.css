@@ -174,12 +174,9 @@ nav a:hover {
 
 .login-card {
     border-radius: 20px;
-    background: white;
     padding: 30px;
-    overflow: hidden;
+    width: 350px;
     box-shadow: 0 0 20px #00ffcc;
-    justify-content: center;
-    align-items: row;
     background: linear-gradient(90deg, #ff4dff, #00ffcc );
 }
 
