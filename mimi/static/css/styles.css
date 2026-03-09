@@ -177,6 +177,10 @@ nav a:hover {
     margin-bottom: 25px;
 }
 
+.login-header h2{
+    margin: 0;
+}
+
 .login-card {
     border-radius: 20px;
     padding: 40px;
