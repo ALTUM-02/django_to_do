@@ -164,23 +164,6 @@ nav a:hover {
     background: #cc9f16;
 }
 
-.login-right {
-    flex: 1;
-    background: #ebd35b;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.login-right h2 {
-    margin-bottom: 10px;
-}
-
-.login-right p {
-    color: #4e2323ff;
-}
-
 a href {
     flex-direction: center;
     justify-content: center;
