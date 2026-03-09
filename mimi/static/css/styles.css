@@ -204,8 +204,8 @@ nav a:hover {
     border: none;
     border-radius: 8px;
     background: #facc15;
-    color: black;
-    font-weight: bold;
+    color: white;
+    font-size: 16px;
     cursor: pointer;
 }
 
