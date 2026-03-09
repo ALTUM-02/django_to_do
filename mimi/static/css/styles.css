@@ -174,8 +174,8 @@ nav a:hover {
 
 .login-card {
     border-radius: 20px;
-    position: relative;
-    background: rgba(255,255,255,0.08);
+    background: white;
+    padding: 30px;
     backdrop-filter: blur(10px);
     text-align: center;
     overflow: hidden;
