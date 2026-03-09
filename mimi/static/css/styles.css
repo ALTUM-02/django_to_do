@@ -166,12 +166,10 @@ nav a:hover {
 
 .login-container {
     display: flex;
-    position: center;
     width: 1200px;
     height: 100vh;
     justify-content: center;
     align-items: center;
-
 } 
 
 .login-card {
