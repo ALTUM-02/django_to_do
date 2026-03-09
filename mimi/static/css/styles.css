@@ -30,18 +30,6 @@ label {
     color: #555;
 }
 
-input[type="submit"]:hover {
-    background-color: #2aa8be;
-}
-.container {
-    width: 300px;
-    margin: 60px auto;
-    background: #185191;
-    padding: 20px;
-    border-radius: 40px;
-    box-shadow: 0 4px 10px rgba(183, 186, 9, 0.1);
-}
-
 h1 {
     text-align: center;
     margin-bottom: 20px;
