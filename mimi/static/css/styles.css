@@ -179,6 +179,11 @@ nav a:hover {
 
 .login-header h2{
     margin: 0;
+    color: #333;
+}
+
+.login-header p{
+    color: #333;
 }
 
 .login-card {
