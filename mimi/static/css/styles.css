@@ -2,6 +2,8 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-color: white;
+    height: 100vh;
+    
 }
 
 /*form {
@@ -29,7 +31,6 @@ label {
     justify-content: ccenter;
     align-items: center;
     height: 100vh;
-    width: 100vh;
 }
 
 .login-header{
