@@ -29,7 +29,6 @@ label {
 }
 
 .login-container{
-    display: flex;
     justify-content: ccenter;
     align-items: center;
     height: 100vh;
