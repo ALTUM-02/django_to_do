@@ -79,6 +79,7 @@ label {
     padding: 12px 12px 12px 40px;
     border: 1px solid #ccc;
     border-radius: 6px;
+    font-size: 14px;
 }
 
 .form-group input{
