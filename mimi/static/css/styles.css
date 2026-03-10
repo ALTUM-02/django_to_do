@@ -108,6 +108,10 @@ label {
     margin-top: 15px;
 }
 
+.reister a{
+    color: #007bff;
+    text-decoration: none;
+}
 .form-group input{
     width: 100%;
     padding: 10px;
