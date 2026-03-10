@@ -63,6 +63,9 @@ label {
     font-weight: bold;
     color: #ff4dff;
 }
+.input-box{
+    position: relative;
+}
 
 .form-group input{
     width: 100%;
