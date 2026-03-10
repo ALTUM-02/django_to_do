@@ -74,6 +74,11 @@ label {
     color: #ff4dff;
 }
 
+.input-box input{
+    width: 100%;
+    padding: 12px 12px 12px 40px;
+}
+
 .form-group input{
     width: 100%;
     padding: 10px;
