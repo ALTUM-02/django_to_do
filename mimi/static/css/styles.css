@@ -103,7 +103,10 @@ label {
     background: #007bff;
 }
 
-.register
+.register{
+    text-align: center;
+    margin-top: 15px;
+}
 
 .form-group input{
     width: 100%;
