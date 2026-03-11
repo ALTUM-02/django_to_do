@@ -28,8 +28,7 @@ label {
 }
 
 .login-container{
-    width: 600px;
-    max-width: 800px;
+    width: 80%;
 }
 
 .login-card{
@@ -76,7 +75,7 @@ label {
 }
 
 .input-box input{
-    width: 100%;
+    width: 100px;
     padding: 12px 12px 12px 40px;
     border: 1px solid #05361b;
     border-radius: 8px;
@@ -115,14 +114,15 @@ label {
     text-decoration: none;
 }
 .form-group input{
-    width: 100%;
+    width: 100px;
     padding: 10px;
     border: none;
     border-radius: 10px;
 }
 
 .login-btn{
-    width: 50%;
+    width: 20%;
+    position: center;
     padding: 12px;
     border: none;
     border-radius: 8px;
@@ -176,16 +176,7 @@ label {
     border-color: #facc15;
 }
 
-.login-card button {
-    width: 100px;
-    padding: 10px;
-    border: none;
-    border-radius: 8px;
-    background: #facc15;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-}
+
 
 .login-card botton:hover {
     background: #cc9f16;
