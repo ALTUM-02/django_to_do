@@ -241,4 +241,5 @@ a href {
 
 input-box input:focus{
     border-color: #667eea;
+    outline: none;
 }
