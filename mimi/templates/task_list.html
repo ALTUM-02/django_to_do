@@ -16,15 +16,15 @@
             {% csrf_token %}
             {{ form.as_p }}
             <button type="submit">submit</button>
-    </form>
-        {% for Task in Tasks %}
-            <div>
-                <h2>{{ Task.title }}</h2>
-                {% if Task.image %}
-                    <img  src="{{ Task.image.url }}" alt="{{ Task.title }}" width="250">
-                {% endif %}   
-            </div>
-        {% endfor %}
+        </form>
+            {% for Task in Tasks %}
+                <div>
+                    <h2>{{ Task.title }}</h2>
+                    {% if Task.image %}
+                        <img  src="{{ Task.image.url }}" alt="{{ Task.title }}" width="250">
+                    {% endif %}   
+                </div>
+            {% endfor %}
   
         
 
