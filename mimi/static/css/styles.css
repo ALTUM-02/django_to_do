@@ -114,6 +114,10 @@ label {
     text-align: center;
 }
 
+.links a{
+    text-align: center;
+}
+
 .register-card{
     text-align: center;
     margin-top: 15px;
