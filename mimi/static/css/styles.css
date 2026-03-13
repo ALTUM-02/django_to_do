@@ -230,3 +230,7 @@ a href {
     left: 12px;
     color: #777;
 }
+
+.input-box input{
+    width: 100%;
+}
