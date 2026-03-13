@@ -101,12 +101,16 @@ label {
     font-size: 16px;
     border-radius: 6px;
     cursor: pointer;
-    
+    margin-top: 10px;
 }
 
 .button:hover{
     background: #007bff;
     display: center;
+}
+
+.message{
+    color: green;
 }
 
 .register-card{
