@@ -201,3 +201,7 @@ a href {
     flex-direction: column;
     margin-bottom: 15px;
 }
+
+.register-container{
+    width: 100%;
+}
