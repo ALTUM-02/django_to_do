@@ -204,4 +204,5 @@ a href {
 
 .register-container{
     width: 100%;
+    max-width: 420px;
 }
