@@ -206,3 +206,7 @@ a href {
     width: 100%;
     max-width: 420px;
 }
+
+.register-card{
+    background: linear-gradient(135deg,#ff4ecd,#19d5c6);
+}
