@@ -238,3 +238,7 @@ a href {
     border-radius: 8px;
     font-size: 14px;
 }
+
+input-box input:focus{
+    border-color: #667eea;
+}
