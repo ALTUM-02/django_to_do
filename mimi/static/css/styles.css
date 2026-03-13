@@ -211,4 +211,5 @@ a href {
     background: linear-gradient(135deg,#ff4ecd,#19d5c6);
     padding: 35px;
     border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
 }
