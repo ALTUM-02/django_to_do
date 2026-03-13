@@ -107,6 +107,7 @@ label {
 
 .button:hover{
     background: #007bff;
+    display: center;
 }
 
 .register-card{
