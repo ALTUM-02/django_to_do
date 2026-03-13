@@ -129,6 +129,7 @@ label {
 .login-btn{
     display: flex;
     align-items: center;
+    text-align: center;
     width: 100%;
     position: center;
     padding: 12px;
