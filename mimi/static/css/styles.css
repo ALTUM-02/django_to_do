@@ -243,3 +243,17 @@ input-box input:focus{
     border-color: #667eea;
     outline: none;
 }
+
+.register-btn{
+    width: 100%;
+    position: center;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #1877f2;
+    color: white;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
