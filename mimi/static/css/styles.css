@@ -199,7 +199,7 @@ a href {
 .form-group {
     display: flex;
     flex-direction: column;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .register-container{
