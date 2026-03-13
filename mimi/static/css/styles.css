@@ -234,4 +234,6 @@ a href {
 .input-box input{
     width: 100%;
     padding: 12px 12px 12px 40px;
+    border: 1px solid #ccc;
+    
 }
