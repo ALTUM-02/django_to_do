@@ -15,7 +15,7 @@
             <h1>Task list</h1>
             <form method="Task" action="{% url 'task_add' %}" encrypt="multipart/form-data">
                 {% csrf_token %}
-            {{ form.as_p }}
+                {{ form.as_p }}
             <button type="submit">submit</button>
         </form>
             {% for Task in Tasks %}
