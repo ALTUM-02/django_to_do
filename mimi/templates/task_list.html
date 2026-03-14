@@ -12,7 +12,7 @@
     <div class="tasklist-container">
         <div class="tasklisk-card">
             <img src="{% static 'images/mimi_logo.png' %}" alt="mimi logo" width="150">
-        <h1>Task list</h1>
+            <h1>Task list</h1>
         <form method="Task" action="{% url 'task_add' %}" encrypt="multipart/form-data">
             {% csrf_token %}
             {{ form.as_p }}
