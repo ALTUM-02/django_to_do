@@ -18,7 +18,7 @@
                 {{ form.as_p }}
             </form>
                 {% for Task in Tasks %}
-                <div>
+                    <div>
                     <h2>{{ Task.title }}</h2>
                     {% if Task.image %}
                         <img  src="{{ Task.image.url }}" alt="{{ Task.title }}" width="250">
