@@ -16,7 +16,7 @@
             <form method="Task" action="{% url 'task_add' %}" encrypt="multipart/form-data">
                 {% csrf_token %}
                 {{ form.as_p }}
-        </form>
+            </form>
             {% for Task in Tasks %}
                 <div>
                     <h2>{{ Task.title }}</h2>
