@@ -272,3 +272,7 @@ input-box input:focus{
     cursor: pointer;
     transition: 0.3s;
 }
+
+.tasklist-container{
+    width: 50%;
+}
