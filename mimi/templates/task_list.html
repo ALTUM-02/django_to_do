@@ -15,7 +15,7 @@
         <form method="Task" action="{% url 'task_add' %}" encrypt="multipart/form-data">
             {% csrf_token %}
             {{ form.as_p }}
-           
+            <button type="submit">submit</button>
         </form>
             {% for Task in Tasks %}
                 <div>
@@ -24,11 +24,31 @@
                         <img  src="{{ Task.image.url }}" alt="{{ Task.title }}" width="250">
                     {% endif %}   
                 </div>
-            {% endfor %}
+        {% endfor %}
   
-        <button type="submit">add list</button>
+        
 
     
-   
+        <ul>
+           {% for task in tasks %}
+            <li>
+                <div style="max-width: 40px;">
+                    {% if task.image %}
+                    <img style="max-width: 60px;" src="{{task.image.url}}" alt="">
+                    {% endif %}
+                </div>
+                <div>
+                    {{ task.title }}  {{ task.description }} (: {{ task.completed }})
+        
+                </div>
+                <div class="icons">
+                    <a href="{% url 'task_update' task.id %}">update<i class="fa-solid fa-pen-to-square"></i></a>
+                    <a href="{% url 'task_delete' task.id %}">delete<i class="fa-solid fa-trash"></i></a>  
+                </div> 
+
+            </li>
+        {% endfor %} 
+        <a href="{% url 'task_add' %}">Add task</a> 
+
 </body>
 </html>
