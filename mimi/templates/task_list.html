@@ -14,6 +14,7 @@
             <img src="/media/tasks/todo.webp" alt="mimi logo" width="150" class="task-image">
             <h1>Task list</h1>
         </div>    
+        
             <form method="Task" action="{% url 'task_add' %}" encrypt="multipart/form-data">
                 {% csrf_token %}
                 {{ form.as_p }}
