@@ -10,19 +10,13 @@
 </head>
 <body>
     <div class="tasklist-container">
-        <div class="task-header">
+        <div class="tasklisk-card">
             <img src="/media/tasks/todo.webp" alt="mimi logo" width="150" class="task-image">
             <h1>Task list</h1>
-        </div>  
-        
-        <div class="task-form-card">
             <form method="Task" action="{% url 'task_add' %}" encrypt="multipart/form-data">
                 {% csrf_token %}
                 {{ form.as_p }}
-
-                <button type="submit">Add Task</button>
             </form>
-        </div>    
                 {% for Task in Tasks %}
                     <div>
                         <h2>{{ Task.title }}</h2>
@@ -47,9 +41,13 @@
                         <div class="icons">
                             <a href="{% url 'task_update' task.id %}">update<i class="fa-solid fa-pen-to-square"></i></a>
                             <a href="{% url 'task_delete' task.id %}">delete<i class="fa-solid fa-trash"></i></a>  
-             
+                        </div> 
+
+                    </li>
+                {% endfor %} 
+            </ul>    
                 <a href="{% url 'task_add' %}">Add task</a> 
-          
+        </div>   
     </div>         
 
 </body>
