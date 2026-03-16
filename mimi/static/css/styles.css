@@ -290,4 +290,5 @@ input-box input:focus{
     width: 120px;
     height: 120px;
     object-fit: cover;
+    display: block;
 }
