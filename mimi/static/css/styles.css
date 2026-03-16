@@ -291,4 +291,5 @@ input-box input:focus{
     height: 120px;
     object-fit: cover;
     display: block;
+    border-radius: 50%;
 }
