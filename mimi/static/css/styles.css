@@ -292,4 +292,5 @@ input-box input:focus{
     object-fit: cover;
     display: flex;
     border-radius: 50%;
+    margin: 0 auto 15px auto;
 }
