@@ -274,14 +274,14 @@ input-box input:focus{
 }
 
 .tasklist-container{
-    width: 40%;
+    width: 50%;
     max-width: 600px;
 }
 
 .tasklist-card{
     background: linear-gradient(135deg,#ff4ecd,#19d5c6);
     padding: 40px;
-    width: 50%;
+    width: 600px;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
 }
