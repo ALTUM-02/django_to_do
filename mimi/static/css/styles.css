@@ -279,7 +279,6 @@ input-box input:focus{
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
-    max-width: 600px;
 }
 
 .tasklist-card{
