@@ -281,6 +281,10 @@ input-box input:focus{
     margin-top: 20px;
 }
 
+.task-header{
+    text-align: center;
+}
+
 .tasklist-card{
     background: linear-gradient(135deg,#ff4ecd,#19d5c6);
     padding: 40px;
