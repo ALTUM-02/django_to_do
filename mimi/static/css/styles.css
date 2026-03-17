@@ -275,6 +275,7 @@ input-box input:focus{
 
 .tasklist-container{
     width: 100%;
+    display: flex;
     max-width: 600px;
 }
 
