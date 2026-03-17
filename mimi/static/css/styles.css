@@ -305,6 +305,10 @@ input-box input:focus{
     border: 1px solid #ccc;
 }
 
+.task-form-card button{
+    width: 100%;
+}
+
 .task-image{
     width: 150px;
     height: 150px;
