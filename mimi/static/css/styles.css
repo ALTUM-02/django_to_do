@@ -283,6 +283,7 @@ input-box input:focus{
 
 .task-header{
     text-align: center;
+    color: white;
 }
 
 .tasklist-card{
