@@ -315,6 +315,10 @@ input-box input:focus{
     cursor: pointer;
 }
 
+.task-form-card button:hover{
+    background: #36458a;
+}
+
 .task-image{
     width: 150px;
     height: 150px;
