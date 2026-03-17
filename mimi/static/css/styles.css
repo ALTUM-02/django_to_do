@@ -312,6 +312,7 @@ input-box input:focus{
     background: #4b5ca8;
     color: white;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .task-image{
