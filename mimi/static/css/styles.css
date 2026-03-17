@@ -286,7 +286,7 @@ input-box input:focus{
     color: white;
 }
 
-.tasklist-card{
+.task-form-card{
     background: linear-gradient(135deg,#ff4ecd,#19d5c6);
     padding: 40px;
     width: 600px;
