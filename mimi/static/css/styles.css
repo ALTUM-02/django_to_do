@@ -311,6 +311,7 @@ input-box input:focus{
     border: none;
     background: #4b5ca8;
     color: white;
+    border-radius: 10px;
 }
 
 .task-image{
