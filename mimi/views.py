@@ -29,7 +29,7 @@ def show(request):
 
 @login_required(login_url='login')
 def task_list(request):
-    tasks = Task.objects.filter(user=request.user)
+    tasks = Task.objects.all()
     return render(request, "task_list.html", {"tasks": tasks})
 
 @login_required
