@@ -308,6 +308,7 @@ input-box input:focus{
 .task-form-card button{
     width: 100%;
     padding: 12px;
+    border: none;
 }
 
 .task-image{
