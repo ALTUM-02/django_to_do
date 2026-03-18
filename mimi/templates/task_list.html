@@ -39,7 +39,9 @@
                             {% if task.image %}
                             <img style="max-width: 60px;" src="{{task.image.url}}" alt="">
                             {% endif %}
-                        </div>
+                        
+                                <a href="{% url 'task_add' %}">Add task</a> 
+                            </div>
                             <div>
                                 {{ task.title }}  {{ task.description }} (: {{ task.completed }})
         
