@@ -59,7 +59,7 @@ def task_update(request, task_id):
     return render(request, "task_update.html", {"task": task})
 
 @login_required
-def task_delete(request, task_id):
+def task_delete(request, id):
     task = Task.objects.get(id=task_id, user=request.user)
     task.delete()
     return redirect('task_list')
