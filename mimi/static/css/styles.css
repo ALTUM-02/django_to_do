@@ -28,7 +28,7 @@ label {
 }
 
 .login-container{
-    width: 600px;
+    width: fit-content;
 }
 
 .login-card{
