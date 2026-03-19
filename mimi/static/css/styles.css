@@ -28,13 +28,13 @@ label {
 }
 
 .login-container{
+    display: flex;
     width: fit-content;
     margin: auto;
     padding: 40px;
 }
 
 .login-card{
-    display: flex;
     background: linear-gradient(135deg,#ff4ecd,#19d5c6);
     padding: 40px;
     border-radius: 20px;
