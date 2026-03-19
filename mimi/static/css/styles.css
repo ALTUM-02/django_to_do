@@ -36,7 +36,7 @@ label {
 .login-card{
     background: linear-gradient(135deg,#ff4ecd,#19d5c6);
     padding: 40px;
-    width: fit-content;
+    width: 100%;
     height: fit-content;
     border-radius: 20px;
     margin: auto;
