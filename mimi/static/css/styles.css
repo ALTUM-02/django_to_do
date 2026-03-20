@@ -330,5 +330,8 @@ input-box input:focus{
 }
 
 .taskadd-container {
-    
-}
+    width: fit-content;
+    margin: auto;
+    padding: 40px;
+} 
+
