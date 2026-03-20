@@ -28,6 +28,7 @@ label {
 }
 
 .login-container{
+    display: flex;
     width: fit-content;
     margin: auto;
     padding: 40px;
