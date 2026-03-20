@@ -343,4 +343,6 @@ input-box input:focus{
     max-width: 400x;
 }
 
-    
+.taskadd-header{
+    text-align: center;
+}    
